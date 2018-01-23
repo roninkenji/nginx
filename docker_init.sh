@@ -7,5 +7,4 @@ NGINX_PREFIX="${NGINX_PREFIX:-/usr/share/nginx}"
 
 chown -R nginx:nginx /var/lib/nginx
 
-exec /usr/sbin/nginx -p "${NGINX_PREFIX}" -g "${NGINX_OPTS}" -c /config/nginx.conf
-
+exec /usr/sbin/nginx -g "${NGINX_OPTS}" -c /config/nginx.conf
